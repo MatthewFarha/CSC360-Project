@@ -1,31 +1,143 @@
-#memoryButtons{
+body, html{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    background-color: #f7f8ef;
+}
+#banner-container{
+    height:20%;
+    width:100%;
+    border-top: 5px solid #006CBC;
+    border-bottom: 5px solid #787878;
+}
+#banner-body{
+    height:80%;
+    background-color: #005CAC;
+    color:#FFFFFF;
+    font-size: 300%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-left: 5px solid #006CBC;
+    border-right: 5px solid #004C9C;
+}
+#banner-buttons{
+    height:20%;
+    background-color:#888888;
+    color:#FFFFFF;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    border-left: 5px solid #989898;
+    border-right: 5px solid #787878;
+}
+a:link, a:visited, a:active, a:hover{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+#settings-container{
+    width:40%;
+    margin-top: 10%;
+    margin-left:30%;
+    margin-right:30%;
+}
+#settings-top{
+    margin:0;
+    height:100px;
+    width:100%;
+    color: #FFFFFF;
+    background-color:#005CAC;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#settings-body input{
+    margin:0;
+    margin-top:20px;
+    height:50px;
+    width:100%;
+}
+#settings-submit{
+    background-color:#33CC33;
+    color: #FFFFFF;
+    font-size: xx-large;
+}
+#memoryButtons, #fakeMemoryButtons{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 80vh;
 }
+#memoryButtons{
+    display:none;
+}
+#settings-display{
+    display:flex;
+    justify-content: space-evenly;
+    font-size: x-large;
+}
+#username, #usernamet{
+    color: #33CC33;
+}
+#numberofbuttons, #numberofbuttonst{
+    color: #006CBC;
+}
+#numberofmoves, #numberofmovest{
+    color: #AC4433;
+}
+
 #menuButtons{
-    display: flex;
+    position: sticky;
+    bottom: 0;
+    padding:10px;
+    text-align: right;
+    display:flex;
+    justify-content: space-between;
+}
+#menuButtons p, #menuButtons a{
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    height: 3%;
+    padding:5px;
+}
+#reset-button{
+    color: #000000;
+}
+.gameButton, .fakeButton{
+    width: 15%;
+    height: 20%;
+}
+#help-info, #help-faq{
+    width:80%;
+    margin:10%;
+    font-size:xx-large;
+}
+#help-info.p{
+    background-color: #FFFFFF;
+}
+#footer-container{
+    margin-top: 20%;
+    height:40%;
+    background-color: #005CAC;
+    border-top: 5px solid #006CBC;
+    border-left: 5px solid #006CBC;
+    border-right: 5px solid #004C9C;
+    border-bottom: 5px solid #004C9C;
+    color: #FFFFFF;
+    display:flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.gameButton{
-    width: 15%;
-    height: 100%;
-}
-#mb1{
-    background-color: #0000FF;
-    height: 10%;
-}
-#mb2{
-    background-color: #00FF00;
-    height: 10%;
-}
-#mb3{
-    background-color: #FFFF00;
-    height: 10%;
-}
-#mb4{
-    background-color: #FF0000;
-    height: 10%;
+#footer-contact-info, #footer-placeholder-1, #footer-placeholder-2{
+    height:75%;
+    width:20%;
+    background-color: #005CAC;
+    border-top: 5px solid #006CBC;
+    border-left: 5px solid #006CBC;
+    border-right: 5px solid #004C9C;
+    border-bottom: 5px solid #004C9C;
+    color: #FFFFFF;
+    text-align: center;
 }
